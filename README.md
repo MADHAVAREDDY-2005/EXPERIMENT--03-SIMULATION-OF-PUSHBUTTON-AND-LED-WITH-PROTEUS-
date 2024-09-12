@@ -71,17 +71,23 @@ We are now at the last part of step by step guide on how to simulate STM32 proje
 
 
 ## STM 32 CUBE PROGRAM :
-
-
-
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+  if((GPIO_Pin == GPIO_PIN_1))
+    {
+        HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_2);
+    }
+}
 
 ## Output screen shots of proteus  :
+![image](https://github.com/user-attachments/assets/019ca657-3a62-4d0b-8558-5b7752361615)
 
 
 
 
 ## Proteus layout(Add pdf screen shot of circuit here)
- 
+ ![image](https://github.com/user-attachments/assets/856bd954-8e88-4449-848e-1aa3c5c80920)
+
  
  
  
